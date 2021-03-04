@@ -30,7 +30,7 @@ CCefManager::initializeCef()
   // This is the first time initialization
   CCefSetting::initializeInstance();
 
-  CefString(&cef_settings_.browser_subprocess_path) = CCefSetting::browser_sub_process_path;
+  CefString(&cef_settings_.browser_subprocess_path) = CCefSetting::browser_sub_process_path;        // TODOJS: Understand this.
   CefString(&cef_settings_.resources_dir_path) = CCefSetting::resource_directory_path;
   CefString(&cef_settings_.locales_dir_path) = CCefSetting::locales_directory_path;
   CefString(&cef_settings_.user_agent) = CCefSetting::user_agent;
