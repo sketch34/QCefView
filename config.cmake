@@ -7,8 +7,7 @@
 #
 set(QT_SDK_DIR
   # Change this value to the Qt SDK path of your build environment
-  #"$ENV{QTDIR}"
-  "C:/Qt/5.15.2/msvc2019_64/"
+  "$ENV{QTDIR}"
 )
 
 #
@@ -26,7 +25,6 @@ set(CEF_SDK_DIR
 if (DEFINED ENV{APPVEYOR})
   set(QT_SDK_DIR
     # Change this value to the Qt SDK path of your build environment
-    #"$ENV{QTDIR}"
-    "C:/Qt/5.15.2/msvc2019_64/"
+    "$ENV{QTDIR}"
   )
 endif()
